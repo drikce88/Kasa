@@ -1,0 +1,43 @@
+.banner img {
+    height: 223px;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    filter: brightness(80%);
+
+    @media screen and (max-width: 640px) {
+        height: 111px;
+        
+    }
+}
+
+.banner {
+    padding-left: 40px;
+    width: 96%;
+    padding-top: 50px;
+    position: relative;
+    display: inline-block;
+
+    @media screen and (max-width: 640px) {
+        padding-left: 10px;
+        
+    }
+}
+
+.text-overlay {
+    font-weight: 500;
+    font-size: 48px;
+    color: #ffff;
+    position: absolute;
+    top: 40%; 
+    left: 45%; 
+    transform: translate(-50%, -50%);
+    text-wrap: wrap;
+    @media screen and (max-width:640px) {
+        font-size: 24px;
+        left: 38%;
+        top: 50%;
+        
+    }
+   
+}
