@@ -1,5 +1,4 @@
 import React from 'react'; 
-import { Link } from 'react-router-dom';
 import imageBanner from "../images/banner.png"
 
 export default function banner() {
