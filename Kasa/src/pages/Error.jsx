@@ -1,6 +1,20 @@
+import Header from "../components/Header/Header.jsx";
+import ErrorBody from "../components/ErrorBody/ErrorBody.jsx";
+
+
+
+
+
+
 const Error = () =>{
     return(
-        <h1>Error</h1>
+        <>
+        <Header />
+        <ErrorBody />
+        
+        
+        
+        </>
     )
 }
 

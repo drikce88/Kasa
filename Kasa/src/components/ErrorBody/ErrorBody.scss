@@ -1,0 +1,42 @@
+.error-containeur {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 500px;
+   @media screen and (max-width:640px) {
+    height: 300px;
+    
+   }
+}
+
+.error-containeur img {
+    @media screen and (max-width: 640px) {
+        width: 198px;
+        height: 99px;
+        
+    }
+}
+
+.article-containeur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 36px;
+    @media screen and (max-width: 640px) {
+        font-size: 18px;
+        text-align: center;
+        
+    }
+}
+
+.link-error {
+    color: #FF6060;
+    font-size: 18px;
+    @media screen and (max-width: 640px) {
+        font-size: 14px;
+        
+    }
+}
