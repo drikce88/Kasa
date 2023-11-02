@@ -17,6 +17,7 @@ select {
     padding-left: 10px;
     border-radius: 5px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .select {
@@ -29,6 +30,7 @@ select {
     font-weight: 500;
     font-size: 24px;
     overflow: hidden;
+    
 }
 
 .select::after {
@@ -37,7 +39,7 @@ select {
     right: 10px;
     top: 30%;
     pointer-events: none;
-    rotate: 90deg;
+    rotate: 270deg;
     color: white;
 }
 
@@ -45,7 +47,7 @@ select {
     background-color: #F6F6F6;
     color: #FF6060;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
     text-wrap: wrap;
     max-width: 10px;
