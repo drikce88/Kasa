@@ -1,37 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
+import chevron from "../images/down-chevron.png";
 
+const Dropdown = ({ title, content }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isRotated, setIsRotated] = useState(false);
 
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+    setIsRotated(!isRotated);
+  };
 
-export default function Dropdown() {
-    return (
-        <div className='bloc-select'>
-            <div className='select'>
-                <select>
-                    <option>Fiabilité</option>
-                    <option className='option-txt'>
-                        Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements,
-                        et toutes les informations sont régulierement vérifiées par nos équipes.
-                    </option>
-                </select>
-            </div>
-            <div className='select'>
-                <select>
-                    <option>Respect</option>
-                    <option></option>
-                </select>
-            </div>
-            <div className='select'>
-                <select>
-                    <option>Service</option>
-                    <option></option>
-                </select>
-            </div>
-            <div className='select'>
-                <select>
-                    <option>Sécurité</option>
-                    <option></option>
-                </select>
-            </div>
+  return ( 
+    <div className="dropdown">
+      <div className="dropdown-title" onClick={toggleDropdown}>
+        {title}
+        <img className={isRotated ? 'chevron rotate' : 'chevron'} src={chevron} alt="Chevron" />
+      </div>
+      {isOpen && (
+        <div className="dropdown-content">
+          {content}
         </div>
-    )
-}
+      )}
+    </div>
+  );
+};
+
+export default Dropdown;
+
+
+
+  
+
+
+
