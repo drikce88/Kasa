@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import Header from "../components/Header/Header.jsx";
+import Carrousel from "../components/Carrousel/Carrousel.jsx";
 
 const Logement = () => {
   // Récupère les paramètres de l'URL, y compris l'ID
@@ -19,6 +20,7 @@ const Logement = () => {
   return (
     <>
     <Header />
+    <Carrousel />
     
     </>
   );
