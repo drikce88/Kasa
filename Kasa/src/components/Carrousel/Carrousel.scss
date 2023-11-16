@@ -4,7 +4,6 @@
     right: 3%;
     top: 35%;
     z-index: 20;
-    
 }
 .left {
     position: absolute;
@@ -13,6 +12,7 @@
     left: 3%;
 }
 .right, .left {
+    cursor: pointer;
     @media screen and (max-width: 640px) {
         height: 24px;
         width: 24px;

@@ -4,6 +4,7 @@ import Header from "../components/Header/Header.jsx";
 import Carrousel from "../components/Carrousel/Carrousel.jsx";
 import data from "../assets/Location.json";
 import Description from "../components/Description/Description.jsx";
+import Footer from "../components/Footer/Footer.jsx";
 
 const Logement = () => {
   const { id } = useParams();
@@ -20,7 +21,8 @@ const Logement = () => {
     <>
       <Header />
       <Carrousel images={logementDetails.pictures} />
-      <Description />
+      <Description id={id} />
+      <Footer />
     </>
   );
 };

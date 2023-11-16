@@ -1,6 +1,6 @@
 import React from 'react';
-import Location from "../../assets/Location.json";
-import Dropdown from "../Dropdown/Dropdown.jsx";
+import Location from '../../assets/Location.json';
+import Dropdown from '../Dropdown/Dropdown.jsx';
 
 export default function Description({ id }) {
   // Récupérer les détails du logement spécifique en fonction de l'ID
@@ -12,10 +12,24 @@ export default function Description({ id }) {
   }
 
   return (
-    <article>
-      <h1>{logementDetails.title}</h1>
-      <h2>{logementDetails.location}</h2>
-      <Dropdown />
+    <article className='description-bloc'>
+      <h1 className='title'>{logementDetails.title}</h1>
+      <h2 className='location'>{logementDetails.location}</h2>
+      <div className='tags'>
+        {logementDetails.tags.map((tag, index) => (
+          <div key={index} className='tag'>{tag}</div>
+        ))}
+      </div>
+      <Dropdown title="Description" content={[logementDetails.description]} />
+
+      <Dropdown title="Équipements" content={
+  <ul>
+    {logementDetails.equipments.map((equip, index) => (
+      <li key={index}>{equip}</li>
+    ))}
+  </ul>
+} />
+
     </article>
   );
 }
