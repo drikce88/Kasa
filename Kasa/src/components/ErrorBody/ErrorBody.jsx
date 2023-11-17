@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 export default function ErrorBody () {
     return (
-        <body>
+        <article>
             <div className='error-containeur'>
                 <img src={errorImg} alt="Erreur 404" />
             </div>
@@ -16,7 +16,7 @@ export default function ErrorBody () {
                     Retourner sur la page d'accueil
                 </Link>
             </article>
-        </body>
+        </article>
         
     )
 }
