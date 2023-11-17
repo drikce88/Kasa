@@ -59,14 +59,15 @@
     display: flex;
     margin-bottom: 40px;
     margin-top: 40px;
+    width: 100%;
     @media screen and (max-width: 640px) {
-        flex-direction: column;
-        
-        
+        flex-direction: column;  
+    }
+    .dropdown{
+        width: 100%;
     }
 }
 
-.dropdown {
-    width: 100%;
-    
-}
+
+
+

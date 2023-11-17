@@ -4,6 +4,7 @@ import Dropdown from '../Dropdown/Dropdown.jsx';
 import Host from '../Host/Host.jsx';
 import Rating from '../Rating/Rating.jsx';
 
+
 export default function Description({ id }) {
   // Récupérer les détails du logement spécifique en fonction de l'ID
   const logementDetails = Location.find((logement) => logement.id === id);
