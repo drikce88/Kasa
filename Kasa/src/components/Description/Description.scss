@@ -1,5 +1,10 @@
 .description-bloc {
-    padding-left: 40px;  
+    padding-left: 40px; 
+
+    @media screen and (max-width: 640px) {
+        padding-left: 20px;
+        
+    } 
 }
 
 .title {
@@ -50,3 +55,18 @@
     }
 }
 
+.dropdown-bloc {
+    display: flex;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    @media screen and (max-width: 640px) {
+        flex-direction: column;
+        
+        
+    }
+}
+
+.dropdown {
+    width: 100%;
+    
+}

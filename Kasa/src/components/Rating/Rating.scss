@@ -1,0 +1,26 @@
+.rating-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+    margin-top: 10px;
+    gap: 10px;
+    @media screen and (max-width: 932px) {
+        justify-content: flex-start;
+        margin-top: -60px;
+        padding-bottom: 30px;  
+     }
+     @media screen and (max-width: 640px) {
+        margin-top: -45px;
+        
+    }
+
+}
+.rate {
+    height: 36px;
+    width: 36px;
+    @media screen and (max-width: 640px) {
+        width: 13px;
+        height: 13px;
+        
+    }
+}
