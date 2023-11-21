@@ -25,7 +25,7 @@
 }
 
 .name {
-    color: #FF6060;
+    @include principal-color;
     font-size: 18px;
     width: 93px;
     height: 52px;

@@ -51,19 +51,15 @@
 
 .dropdown-content {
     border-radius: 5px;
-    color: #FF6060;
+    @include principal-color;
     background-color: #F6F6F6;
     width: 80%;
     font-size: 20px;
     min-height: 100px;
     padding-left: 10px;
-    display: flex;
-    align-items: center;
+    @include flex-center;
     padding-top: 20px;
     padding-bottom: 20px;
-
-    
-
     @media screen and (max-width: 640px) {
        
         font-size: 13px;
