@@ -17,7 +17,7 @@ const Dropdown = ({ title, content }) => {
         <img className={isRotated ? 'chevron rotate' : 'chevron'} src={chevron} alt="Chevron" />
       </div>
       {isOpen && (
-        <div className={"dropdown-content"}>
+        <div className={`dropdown-content ${isOpen ? 'fade-in' : ''}`}>
           {content}
         </div>
       )}
