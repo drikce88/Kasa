@@ -4,7 +4,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 210px;
+    max-height: 410px;
+    min-height: 210px;
+    
     
 
     img{
