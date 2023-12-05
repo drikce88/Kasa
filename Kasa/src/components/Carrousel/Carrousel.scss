@@ -50,4 +50,8 @@
     bottom: 0;
     font-size: 18px;
     color: white;
+    @media screen and (max-width: 640px) {
+        display: none;
+        
+    }
 }

@@ -74,6 +74,8 @@
         align-items: flex-start;
         @media screen and (max-width: 640px) {
             align-items: center;
+            margin-left: 20px;
+            width: 120%;
              
         }
     }
